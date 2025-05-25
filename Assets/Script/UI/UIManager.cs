@@ -57,6 +57,15 @@ public class UIManager : MonoBehaviour
 
     #region Pause Logic
 
+    /// <summary>
+    /// Call this from a UI Button OnClick
+    /// </summary>
+    public void TogglePause()
+    {
+        bool isPaused = pauseScreen.activeSelf;
+        PauseGame(!isPaused);
+    }
+
     public void PauseGame(bool status)
     {
         pauseScreen.SetActive(status);

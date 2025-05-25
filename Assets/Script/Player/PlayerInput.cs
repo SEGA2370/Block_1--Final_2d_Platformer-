@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(PlayerMovement))]
 [RequireComponent(typeof(PlayerAttack))]
@@ -17,9 +18,16 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
-        HandleMovementInput();
-        HandleJumpInput();
-        Attack();
+        if(Application.isMobilePlatform)
+        {
+            return;
+        }
+        else
+        {
+            HandleMovementInput();
+            HandleJumpInput();
+            Attack();
+        }
     }
 
     private void HandleMovementInput()
@@ -43,6 +51,11 @@ public class PlayerInput : MonoBehaviour
 
     private void Attack()
     {
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
         if (Input.GetMouseButton(0) && playerAttack.CanAttack() && playerMovement.CanAttack())
         {
             playerAttack.Attack();

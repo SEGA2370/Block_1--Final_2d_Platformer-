@@ -52,6 +52,7 @@ GameObject:
   - component: {fileID: 5420940891514677057}
   - component: {fileID: 8611338666444474720}
   - component: {fileID: 1111442031112695800}
+  - component: {fileID: 5177282877429302308}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -232,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccb13645a41e4f0479c0409f665b499b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 7
   jumpPower: 20
   coyoteTime: 0.25
   extraJumps: 1
@@ -284,6 +285,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
+  HealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  healthBar: {fileID: 0}
 --- !u!114 &1854791613679338061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,7 +328,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iFramesDuration: 1.5
   numberOfFlashes: 2
-  uiManager: {fileID: 0}
 --- !u!114 &8611338666444474720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,3 +355,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
+--- !u!114 &5177282877429302308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8785930863064668941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e72f8344460f054db4957ef471376f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
