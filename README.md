@@ -1,6 +1,6 @@
 # 🧱 Save Drogo From Dungeon
 
-<img src="[Assets/Images/gameplay_preview.jpg](https://github.com/SEGA2370/Block_1--Final_2d_Platformer-/blob/c4ec2cdcf7afa214d783477e181c63c39ec7524e/Assets/Sprite/Save%20Drogo.jpg)" alt="Gameplay Preview" width="600"/>
+<img src="Assets/Sprite/Save Drogo.jpg" alt="Gameplay Preview" width="600"/>
 
 ## 🎮 Game Overview
 
